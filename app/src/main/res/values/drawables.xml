@@ -1,0 +1,5 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_account_box" type="drawable">@drawable/ic_account_box_black_24dp</item>
+    <item name="ic_exit_to_app" type="drawable">@drawable/ic_exit_to_app_black_24dp</item>
+    <item name="ic_help_outline" type="drawable">@drawable/ic_help_outline_black_24dp</item>
+</resources>
