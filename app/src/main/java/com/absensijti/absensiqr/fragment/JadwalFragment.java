@@ -23,7 +23,7 @@ import com.google.zxing.integration.android.IntentResult;
  */
 public class JadwalFragment extends Fragment {
 
-    public TextView textView;
+    public TextView detailMhs, detailDos;
 
     public JadwalFragment() {
         // Required empty public constructor
@@ -36,8 +36,18 @@ public class JadwalFragment extends Fragment {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_jadwal,container, false);
 
-        textView = view.findViewById(R.id.textDetail);
-        textView.setOnClickListener(new View.OnClickListener() {
+        detailMhs = view.findViewById(R.id.textDetailMhs);
+        detailDos = view.findViewById(R.id.textDetailDos);
+
+        detailMhs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(),DetailJadwalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        detailDos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(),DetailJadwalActivity.class);
