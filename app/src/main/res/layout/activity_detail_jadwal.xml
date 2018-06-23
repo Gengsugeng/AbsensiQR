@@ -34,7 +34,7 @@
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="italic" />
 
             </android.support.v7.widget.LinearLayoutCompat>
 
